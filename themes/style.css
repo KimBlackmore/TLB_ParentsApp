@@ -1,0 +1,15 @@
+p.highlight{
+	color:blue; 
+	font-size:18pt; 
+	font-face:Verdana;
+	font-weight:bold;
+}
+
+.fancy{
+	font-style: italic;
+	color: purple;
+}
+
+h1{
+	margin-bottom: 50px;
+}

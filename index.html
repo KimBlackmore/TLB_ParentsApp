@@ -1,0 +1,164 @@
+<html>
+	<head>
+		<title>TLB Parent's App</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+ 		<meta name="apple-mobile-web-app-capable" content="yes"> 
+		
+		<!--<link rel="stylesheet" type="text/css" href="style.css"> -->
+		<link rel="stylesheet" href="themes/TLB_App.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="main.js"></script>
+		<script src="Chart/Chart.js"></script>
+		<script src="phonegap.js"></script>
+		<!-- <script>
+  			$(function() {
+    			$( "#datepicker" ).datepicker();
+  			});
+  		</script> -->
+
+	</head>
+	
+	<body>
+		<div data-role="page" id="home">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+				<p> Are your kids achieving balance? </p>
+				<h2> <a href="#Jamar" data-theme="c" data-transition="slide"> Jamar</a>  </h2>
+				<strong>146 points </strong> <br>
+				Current status: online 
+
+				<h2> <a href="#Darius" data-theme="c" data-transition="slide"> Darius</a>  </h2>
+				<strong>26 points </strong> <br>
+				Current status: offline 
+
+				<h2> <a href="#Arthur" data-theme="c" data-transition="slide"> Arthur: </a> </h2>
+				<strong>251 points </strong> <br>
+				Current status: offline 
+				</ul>
+
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+		<div data-role="page" id="Jamar">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+
+				<h2> Jamar </h2>
+				<h3> Points total: 146 </h3>
+				<h3 data-theme="a" > Current status:</h3> Online since 4:34pm today
+				<a href="#sendMessage" data-role="button" data-theme="a" > Send a message </a>
+				<a href="#checkPoints" data-role="button" data-theme="b" > Check points claimed </a>
+				<a href="#kidSettings" data-role="button" data-theme="a" > Settup agreements </a>
+
+				<a href="#home"  data-theme="" data-transition="slide" data-direction="reverse">Go back home</a>
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+ 		<div data-role="page" id="Darius">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+
+				<h2> Darius </h2>
+				<h3> Points total: 26 </h3>
+				<h3 data-theme="a" > Current status:</h3> Offline since 9:00pm yesterday
+				<a href="#sendMessage" data-role="button" data-theme="a" > Send a message </a>
+				<a href="#checkPoints" data-role="button" data-theme="b" > Check points claimed </a>
+				<a href="#kidSettings" data-role="button" data-theme="a" > Settup agreements </a>
+				
+				<a href="#home"  data-theme="" data-transition="slide" data-direction="reverse">Go back home</a>
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+ 		<div data-role="page" id="Arthur">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+
+				<h2> Arthur </h2>
+				<h3> Points total: 251 </h3>
+				<h3 data-theme="a" > Current status:</h3> Offline since 8:57pm yesterday
+				<a href="#sendMessage" data-role="button" data-theme="a" > Send a message </a>
+				<a href="#checkPoints" data-role="button" data-theme="b" > Check points claimed </a>
+				<a href="#kidSettings" data-role="button" data-theme="a" > Set up agreements </a>
+				
+				<a href="#home"  data-theme="" data-transition="slide" data-direction="reverse">Go back home</a>
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+ 		<div data-role="page" id="sendMessage">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+					<h2> Send a message to Jamar </h2>
+					<input type="text" name="message" required="" pattern="[0-9]*" id="number-pattern" placeholder="Enter your message">
+					<a href="#Jamar" data-role="button" data-theme="b">Send</a>
+					<a href="#Jamar"  data-theme="" data-transition="slide" data-direction="reverse">Go back to Jamar</a>
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+ 		<div data-role="page" id="checkPoints">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+					<h2> Jamar's points claimed  </h2>
+					Will make this so you can see which have been checked, and can click on the unchecked ones and verify or dispute the evidence. If disputed, will remove points and send a message to Jamar.
+					<ul>
+						<li> <em> 10:31am 19/01/2016</em> Empty the dishwaser <a href=""> Check </a> </li>
+						<li> <em>8:17am 19/01/2016</em> Run 15 minutes <span style="text-decoration:underline;">Accepted</span></li>
+					</li> ...more... </li>
+					</ul>
+
+					<a href="#Jamar"  data-theme="" data-transition="slide" data-direction="reverse">Go back to Jamar</a>
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+ 		<div data-role="page" id="kidSettings">
+			<div data-role="header" data-theme="a">
+				<img src="themes/TLBbanner.jpg" alt="TLB banner" width="100%">
+			</div>
+			<div role="main" class="ui-content">
+				<BR>
+					<h2> Jamar's point earning options  </h2>
+					<p>Will make this so you can see what real-life tasks are on offer, and the number of points they earn. And minimum/maximum limits on how many each day. </p>
+					<h2> Jamar's spending windows </h2>
+					<p> Will make this so can't spend points during the wee small hours of the night, and can have other no-spend windnows, and optionally a max spend per day. </p>
+					<h2> Jamar's base quota</h2>
+					<p> May set a small quota of "free" points each day </p>
+
+					<a href="#Jamar"  data-theme="" data-transition="slide" data-direction="reverse">Go back to Jamar</a>
+			</div>
+			<!-- <div data-role="footer" data-theme="a" data-position="fixed"><h4>(c) 2015</h4></div> -->
+		</div>
+
+
+
+	</body>
+</html>
